@@ -54,3 +54,10 @@ let Year: string | number = "22"
 Year = 22
 
 let Months: (string | number)[] = ["Jan", 2, "Mar", 4]
+
+
+//Optional Operator
+
+let currrentDate: { Day: number; Month?: string; Year?: number } = {
+    Day: 3,
+}

@@ -18,11 +18,15 @@ let Address: { House_No: number; Place: string; } = { House_No: 127, Place: "Ker
 interface Company {
     name: string,  
     employees: number,
-    salary: number
+    salary: number,
+    getName: () => void
 }
 
 let employeeDetails: Company = {
     name:"Akhil K",
     employees: 75,
-    salary:45000
+    salary: 45000,
+    getName() {
+        console.log(this.name)
+    },
 }

@@ -30,3 +30,18 @@ let employeeDetails: Company = {
         console.log(this.name)
     },
 }
+
+
+// Type
+
+type Details = {
+    firstName: string,
+    lastName: string,
+    age: number,
+}
+
+let userDetails: Details = {
+    firstName: "Akhil",
+    lastName: "K",
+    age:22
+}

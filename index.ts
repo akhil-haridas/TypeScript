@@ -61,3 +61,33 @@ let Months: (string | number)[] = ["Jan", 2, "Mar", 4]
 let currrentDate: { Day: number; Month?: string; Year?: number } = {
     Day: 3,
 }
+
+
+//Functions
+
+function getUsername(userDetails: Details) {
+    return `${userDetails.firstName} ${userDetails.lastName}`
+}
+
+getUsername(userDetails)
+
+
+function returnArgument({ name, age }: {name: string; age:number}) {
+    return `${name}${age}`
+}
+
+returnArgument({ name: "Akhil", age: 22 })
+
+
+function returnTypeSetting(userDetails: Details): string | number{
+    return userDetails.age
+}
+
+const returnValue = returnTypeSetting(userDetails)
+
+// returnValue. we can get type based functions
+
+
+function consoleFunc(userDetails: Details): void{
+    console.log("username :",userDetails.firstName)
+}

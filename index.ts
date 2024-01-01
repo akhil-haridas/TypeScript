@@ -45,3 +45,12 @@ let userDetails: Details = {
     lastName: "K",
     age:22
 }
+
+
+// Union Operator
+
+let Year: string | number = "22"
+
+Year = 22
+
+let Months: (string | number)[] = ["Jan", 2, "Mar", 4]

@@ -91,3 +91,17 @@ const returnValue = returnTypeSetting(userDetails)
 function consoleFunc(userDetails: Details): void{
     console.log("username :",userDetails.firstName)
 }
+
+//Named Types
+
+type Status = "pending" | "progress" | "completed" | "failed"
+
+let currentStatus: Status = "completed"
+
+const apiResponse = "pending"
+
+if (apiResponse === "pending") currentStatus = "pending"
+
+type ToggleSwitch = "on" | "off"
+
+let toggle:ToggleSwitch = "off"

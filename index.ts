@@ -13,3 +13,16 @@ let empty: [] = []
 let Address: { House_No: number; Place: string; } = { House_No: 127, Place: "Kerala" }
 
 
+//Interface
+
+interface Company {
+    name: string,  
+    employees: number,
+    salary: number
+}
+
+let employeeDetails: Company = {
+    name:"Akhil K",
+    employees: 75,
+    salary:45000
+}

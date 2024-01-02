@@ -198,3 +198,6 @@ function getStatus(orderID: string, status: statusType) {
 getStatus("1234", statusType.PENDING)
 
 
+//As const
+
+let constName = "AKHIL K" as const

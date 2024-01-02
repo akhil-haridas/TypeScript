@@ -271,3 +271,6 @@ const food: Food2 = {
     PIZZA :"123"
 }
 
+const food1: Food2 = {
+    BURGER: 23
+}

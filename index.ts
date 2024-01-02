@@ -182,4 +182,19 @@ interface adminDetails3 extends userDetails {
 
 
 
+//Enum
+
+enum statusType {
+    PENDING,
+    COMPLETED,
+    FAILED
+}
+
+
+function getStatus(orderID: string, status: statusType) {
+    console.log(orderID, "==", status)
+}
+
+getStatus("1234", statusType.PENDING)
+
 

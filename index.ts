@@ -166,3 +166,20 @@ function getValue<T>(value: T): T {
 const userValue = getValue<userDetails>(user)
 const adminValue  = getValue<adminDetails>(admin)
 
+
+//Merging using type
+
+
+type adminDetails2 = userDetails & {
+    firstname:string
+}
+
+//Merging using interface
+
+interface adminDetails3 extends userDetails {
+    lastname: string
+}
+
+
+
+

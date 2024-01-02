@@ -126,3 +126,43 @@ function add(num1: any, num2: any): any{
 
 add("1", "1")
 add(1, 1)
+
+
+//Generics
+
+function getAge<T>(age: T): T{
+    return age
+}
+
+getAge<string>("1")
+getAge<number>(1)
+
+
+
+type userDetails = {
+    age: number,
+    name: string
+}
+
+type adminDetails = {
+    role: string,
+    age: string
+}
+
+let user: userDetails = {
+    age: 22,
+    name: 'John'
+}
+
+let admin: adminDetails = {
+    role: 'admin',
+    age: "22"
+}
+
+function getValue<T>(value: T): T {
+    return value
+}
+
+const userValue = getValue<userDetails>(user)
+const adminValue  = getValue<adminDetails>(admin)
+

@@ -219,3 +219,55 @@ function keyOfandTypeOf(id:number,status: keyof typeof statuses) {
 }
 
 keyOfandTypeOf(1234, "COMPLETED")
+
+
+
+//Utility Types
+
+type data = {
+    name: string,
+    age: number
+}
+
+const getDetails1: Readonly<data> = {
+    name: 'Akhil',
+    age: 22
+}
+
+// getDetails.age = 33
+
+const getDetails2: Partial<data> = {
+    name: 'Akhil',
+}
+
+const getDetails3: Required<data> = {
+    name: 'Akhil',
+    age: 22
+}
+
+const getDetails4: Pick<data, "age"> = {
+    age: 22
+}
+
+const getDetails5: Omit<data, "name"> = {
+    age: 22
+}
+
+
+type typeStatus = "pending" | "completed" | "failed"
+
+const status2: Exclude<typeStatus, "pending"> = "completed"
+
+
+type Food = {
+    KFC: string,
+    PIZZA: string,
+    BURGER: string
+}
+
+type Food2 = Record<string, any>;
+
+const food: Food2 = {
+    PIZZA :"123"
+}
+

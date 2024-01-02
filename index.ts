@@ -274,3 +274,7 @@ const food: Food2 = {
 const food1: Food2 = {
     BURGER: 23
 }
+
+const food2: Food2 = {
+    BURGER: 23
+}

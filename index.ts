@@ -201,3 +201,21 @@ getStatus("1234", statusType.PENDING)
 //As const
 
 let constName = "AKHIL K" as const
+
+
+//keyOf and typeOf
+
+
+const statuses = {
+    PENDING: "pending",
+    PROGRESS: "progress",
+    COMPLETED:"completed",
+    FAILED: "failed"
+} as const
+
+function keyOfandTypeOf(id:number,status: keyof typeof statuses) {
+    // status.COMPLETED = "changing"
+    console.log(`${id}: ${statuses[id]}`)
+}
+
+keyOfandTypeOf(1234, "COMPLETED")

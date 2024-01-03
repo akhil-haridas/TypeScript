@@ -277,5 +277,12 @@ const food: Food2 = {
 let NameValue: any = "Akhil"
 
 
+//Unknown
+
+let nameValue: unknown = "Alkhil"
+
+const newValue = nameValue as string
+
+
 
 

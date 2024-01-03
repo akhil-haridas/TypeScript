@@ -215,7 +215,7 @@ const statuses = {
 
 function keyOfandTypeOf(id:number,status: keyof typeof statuses) {
     // status.COMPLETED = "changing"
-    console.log(`${id}: ${statuses[id]}`)
+    // console.log(`${id}: ${statuses[id]}`)
 }
 
 keyOfandTypeOf(1234, "COMPLETED")

@@ -271,14 +271,11 @@ const food: Food2 = {
     PIZZA :"123"
 }
 
-const food1: Food2 = {
-    BURGER: 23
-}
 
-const food2: Food2 = {
-    BURGER: 23
-}
+//Any
 
-const food3: Food2 = {
-    BURGER: 23
-}
+let NameValue: any = "Akhil"
+
+
+
+

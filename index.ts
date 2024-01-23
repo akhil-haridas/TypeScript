@@ -284,8 +284,5 @@ let nameValue: unknown = "Alkhil"
 const newValue = nameValue as string
 
 
-//Never
 
-function throwError(message: string): never{
-    throw new Error(message)
-}
+

@@ -289,10 +289,3 @@ const newValue = nameValue as string
 function throwError(message: string): never{
     throw new Error(message)
 }
-
-
-//Void
-
-function throwError2(message: string): void{
-    console.log(message)
-}

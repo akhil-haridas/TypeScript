@@ -296,8 +296,3 @@ function throwError(message: string): never{
 function throwError2(message: string): void{
     console.log(message)
 }
-
-
-//Null
-
-let getName: string | null = null

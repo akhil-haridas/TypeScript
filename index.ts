@@ -291,7 +291,7 @@ function throwError(message: string): never{
 }
 
 
-//Void
+//Void 
 
 function throwError2(message: string): void{
     console.log(message)

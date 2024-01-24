@@ -293,6 +293,6 @@ function throwError(message: string): never{
 
 //Void
 
-function throwError2(message: string): void{
-    console.log(message)
-}
+// function throwError2(message: string): void{
+//     console.log(message)
+// }

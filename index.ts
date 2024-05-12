@@ -1,6 +1,6 @@
 //Infer Types (Implicit Types)
 
-.let userName = "akhil"
+..let userName = "akhil"
 
 //Defining Types (Explicit Types)
 
